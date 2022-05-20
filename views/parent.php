@@ -7,11 +7,11 @@ $parents = $data->getAllparents();
 
 <div class="container">
     <div class="row">
-        <div class="col col-lg-12 mx-auto">
+        <div class="col col-lg-12 mt-3 mx-auto">
             <a href="<?= BASE_URL; ?>add-parent" class="btn btn-md btn-primary">
                 <i class="fas fa-plus"></i>
             </a>
-            <div class="table-responsive">
+            <div class="table-responsive mt-3">
                 <table class="table">
                     <thead>
                         <tr>

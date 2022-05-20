@@ -11,7 +11,7 @@ class AdminsController {
 
                 $_SESSION['logged'] = true;
                 $_SESSION['username'] = $result->username;
-                Redirect::to('dashboard');
+                Redirect::to('parent');
 
             }else{
                 Session::set('error','Pseudo ou mot de passe est incorrect');
