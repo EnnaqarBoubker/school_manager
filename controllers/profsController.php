@@ -32,6 +32,7 @@ class profsController{
                 'genre' => $_POST['genre'],
                 'matier' => $_POST['matier'],
                 'phone' => $_POST['phone'],
+                'class' => $_POST['class'],
             );
             $result = profs::add($data);
             if($result === 'ok'){
@@ -60,6 +61,7 @@ class profsController{
              'genre' => $_POST['genre'],
              'matier'=> $_POST['matier'],
              'phone' =>  $_POST['phone'],
+             'class' =>  $_POST['class'],
             );      
             $result =profs::update($data);
             if ($result === 'ok') {

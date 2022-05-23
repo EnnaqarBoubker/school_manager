@@ -20,9 +20,8 @@ if (isset($_POST['submit'])) {
 		<div class="col-md-8 mx-auto">
 			<div class="card">
 				<div class="card-header">Update teacher</div>
-				<?= $data->id; ?>
 				<div class="card-body bg-light">
-					<a href="<?php echo BASE_URL;?>teacher" class="btn btn-sm btn-secondary mr-2 mb-2">
+					<a href="<?php echo BASE_URL;?>dashboard" class="btn btn-sm btn-secondary mr-2 mb-2">
 						<i class="fas fa-home"></i>
 					</a>
 					<form method="post">
@@ -36,7 +35,12 @@ if (isset($_POST['submit'])) {
 						</div>
 						<div class="form-group">
 							<label for="genre">genre</label>
-							<input type="text" name="genre" class="form-control" placeholder="genre" value="<?= $data->genre ?>">
+							<select class="custom-select my-1 mr-sm-2 mb-3" name="genre">
+							<option value="<?= $data->genre; ?>" selected><?= $data->genre; ?></option>
+								<option value="F">female</option>
+								<option value="M">Male</option>
+							</select>
+								
 						</div>
 						<div class="form-group">
 							<label for="matier">matier</label>
@@ -45,10 +49,18 @@ if (isset($_POST['submit'])) {
 						</div>
                             
                         <div class="form-group">
-							<label for="phone">genre</label>
+							<label for="phone">Phone</label>
 							<input type="text" name="phone" class="form-control" placeholder="phone" value="<?= $data->phone ?>">
 						</div>
-                      
+						<div>
+						<label for="Class">Class</label>
+					   <select class="custom-select my-1 mr-sm-2 mb-3" name="class">
+							<option value="<?= $data->class; ?>" selected><?= $data->class; ?></option>
+							<option value="Namek">Namek</option>
+							<option value="meata">meata</option>
+							<option value="NiNJA">NiNJA</option>
+                       </select>
+						</div>
 
 
 						<div class="form-group">
