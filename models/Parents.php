@@ -12,7 +12,10 @@ class Parents{
 
 
     static public function addParent($data){
-
+        // if ($data['matr'] === $_POST['matr']) {
+        //     Redirect::to('parent');
+        // }
+        
             $stmt = DB::connect()->prepare('INSERT INTO parents (matr,name,genre,job,address,phone) VALUES (?, ?, ?, ?, ?, ?)');
             $stmt->bindParam(1,$data['matr']);
             $stmt->bindParam(2,$data['name']);

@@ -24,8 +24,9 @@ class ParentsController
                 'phone' => $_POST['phone'],
             );
             $result = Parents::addParent($data);
+    
             if($result === 'ok'){
-                header('location:'.BASE_URL);
+                Redirect::to('parent');
             }else{
                 echo $result;
             }

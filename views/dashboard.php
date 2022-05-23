@@ -30,7 +30,7 @@ if(isset($_POST['search'])){
                 <a class="nav-link" href="students">Etudient</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="parents">Parents</a>
+                <a class="nav-link" href="parent">Parents</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="teacher">Professeurs</a>

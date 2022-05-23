@@ -19,7 +19,7 @@
 			<div class="card">
 				<div class="card-header">Ajouter un Parent</div>
 				<div class="card-body bg-light">
-					<a href="<?php echo BASE_URL;?>" class="btn btn-sm btn-secondary mr-2 mb-2">
+					<a href="<?php echo BASE_URL;?>parent" class="btn btn-sm btn-secondary mr-2 mb-2">
 						<i class="fas fa-home"></i>
 					</a>
 					<form method="post">
@@ -33,7 +33,7 @@
 						</div>
 						<div class="form-group">
                             <label for="genre">Genre*</label>
-                            <select class="form-control" name="genre" >
+                            <select  class="form-control" name="genre" >
                                 <option value="<?= $data -> genre ?>"><?= $data -> genre ?></option>
 								<option value="Male" >Male</option>
 								<option value="Female">Female</option>
